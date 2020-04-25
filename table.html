@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Presidents</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             table {
                 border: 2px solid black;
@@ -16,6 +17,19 @@
             }
             th {
                 background-color: cadetblue;
+            }
+            from {
+                margin-bottom: 10px;
+            }
+            @media (min-width: 500px) {
+                body {
+                    background-color: darkgoldenrod;
+                }
+            }
+            @media (max-width: 499px) {
+                body {
+                    background-color: darkorchid;
+                }
             }
         </style>
     </head>
@@ -40,7 +54,23 @@
         </table>
         <form>
             <input type="text" placeholder="Full Name" name="name">
+            <input type="password" type="password" placeholder="Password">
             <button>Submit!</button>
         </form>
+        <div>
+            Favourit color?
+            <input name="color" type="radio" value="red">Red
+            <input name="color" type="radio" value="blue">Blue
+            <input name="color" type="radio" value="violet">Violet
+            <input name="color" type="radio" value="green">Green
+        </div>
+        <div>
+            <input name="country" list="countries" placeholder="Country">
+            <datalist id="countries">
+                <option value="Afghanistan">
+                    <option value="Albania">
+                        <option value="South Korea">
+                        </datalist>
+        </div>
     </body>
 </html>
