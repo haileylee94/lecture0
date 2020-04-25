@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Presidents</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                margin-bottom: 10px;
+                width: 50%;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+            th {
+                background-color: cadetblue;
+            }
+            from {
+                margin-bottom: 10px;
+            }
+            @media (min-width: 500px) {
+                body {
+                    background-color: darkgoldenrod;
+                }
+            }
+            @media (max-width: 499px) {
+                body {
+                    background-color: darkorchid;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style= "color:blueviolet;text-align:center;">Presidents</h1>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Years in Office</th>
+            </tr>
+            <tr>
+                <td>Georges</td>
+                <td>Washington</td>
+                <td>1789-1797</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Adams</td>
+                <td>1797-1801</td>
+            </tr>
+        </table>
+        <form>
+            <input type="text" placeholder="Full Name" name="name">
+            <input type="password" type="password" placeholder="Password">
+            <button>Submit!</button>
+        </form>
+        <div>
+            Favourit color?
+            <input name="color" type="radio" value="red">Red
+            <input name="color" type="radio" value="blue">Blue
+            <input name="color" type="radio" value="violet">Violet
+            <input name="color" type="radio" value="green">Green
+        </div>
+        <div>
+            <input name="country" list="countries" placeholder="Country">
+            <datalist id="countries">
+                <option value="Afghanistan">
+                    <option value="Albania">
+                        <option value="South Korea">
+                        </datalist>
+        </div>
+    </body>
+</html>
